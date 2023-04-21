@@ -3,6 +3,17 @@
   cursor: pointer;
 }
 
+/* .title {
+  font-size: 28px;
+  text-align: center;
+  font-weight: bold;
+} */
+
+/* .container-2 {
+  max-width: 1200px;
+  margin: 0 auto;
+} */
+
 /* SERVICES */
 .card-service {
   width: 33.3%;
@@ -18,6 +29,23 @@
   background-color: #DEE2E6;
 }
 
+/* PRODUCTS */
+/* .products-css {
+  width: 100%;  
+}
+
+.content-cards {
+  display: flex;
+  gap: 16px;
+}
+
+.card-2 {
+  width: 25%;
+  height: 300px;
+  background-color: beige;
+} */
+
+/* FOOTER */
 .footer {
   width: 100%;
   color: #FFFFFF;

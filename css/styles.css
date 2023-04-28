@@ -1,6 +1,35 @@
+body {
+  font-family: 'Lato', sans-serif;
+}
+
 /* Custom Class */
 .pointer {
   cursor: pointer;
+}
+
+/* HEADER */
+.navbar-brand {
+  width: 20%;
+  display: block;
+  text-transform: uppercase;
+  color: #978D8D !important;
+}
+
+.navbar-collapse {
+  width: 80%;
+  display: flex;
+  justify-content: end;
+}
+
+.nav-link {
+  font-size: .875rem !important;
+  text-transform: uppercase;
+  color: #978D8D !important;
+}
+
+.active {
+  color: #FFF !important;
+  font-weight: 700 !important;
 }
 
 /* .title {

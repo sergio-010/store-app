@@ -9,57 +9,41 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-    crossorigin="anonymous"></script>
+  <link 
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+  >
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"
+  >  
   <title> STORE</title>
 </head>
 
 <body>
-  <nav class="navbar bg-dark navbar-expand-lg">
-    <div class="container">
-      <a class="navbar-brand" href="#">Logo</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Inico</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./contact.html">Productos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./contact.html">Servicios</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./contact.html">Contacto</a>
-          </li>
-        </ul>
+  <header class="header">
+    <div class="header-content contenedor">
+      <div class="logo">
+        <img src="./assets/img/logo.png" alt="logo">
       </div>
+  
+      <nav class="nav">
+        <a href="/">Home</a>
+        <a href="/about">Nosotros</a>
+        <a href="/contact">Contacto</a>
+      </nav>
     </div>
-  </nav>
+  </header>
 
   <main class="main">
-    <h1 class="fs-2 fw-bold text-center my-2">TIENDA LA MONA</h1>
-    <!-- <button id="btn-click">click</button> -->
+    <h1 class="title">TIENDA LA MONA</h1>    
     
-    <section class="carrousel-promos container-fluid container-xl">
+    <section class="carrousel-promos contenedor">
       <div id="carouselExample" class="carousel slide">
         <div class="carousel-inner">
-          <!-- <div class="carousel-item active">
-            <img src="assets/img/pagani.jpg" class="d-block w-100" alt="...">
-          </div> -->
           <div class="carousel-item active">
-            <img src="assets/img/rolls-royce-boat-tail-1-1622127698.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="assets/img/puesta-sol.jpg" class="d-block w-100" alt="...">
+            <img src="assets/img/img-banner-arroz.jpg" class="d-block w-100" alt="...">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -73,49 +57,71 @@
       </div>
     </section>
 
-    <section class="products container-fluid container-xl">
-      <h2 class="fs-3 fw-bold text-center my-3">PRODUCTOS DESTACADOS</h2>
-  
-      <div class="d-flex justify-content-between gap-2 mb-5" style="height:300px">
-        <div style="width:25%;" class="bg-primary h-100">caja 1</div>
-        <div style="width:25%;" class="bg-primary h-100">caja 2</div>
-        <div style="width:25%;" class="bg-primary h-100">caja 3</div>
-        <div style="width:25%;" class="bg-primary h-100">caja 4</div>
+    <section class="section">
+      <h2 class="title">PRODUCTOS DESTACADOS</h2>
+      <div class="products contenedor">    
+        <div class="content-card">
+          <div class="product-card">
+            <figure class="img-card">
+              <img src="./assets/img/img-salsa.png" alt="salsa">
+            </figure>
+            <div class="footer-card">
+              <span>$ 10.800</span>
+              <p>SALSA DE TOMATE  CONSTANCIA</p>
+            </div>
+          </div>          
+        </div>
+        <div class="content-card">
+          <div class="product-card">
+            <figure class="img-card">
+              <img src="./assets/img/img-mayonesa.png" alt="salsa">
+            </figure>
+            <div class="footer-card">
+              <span>$ 10.800</span>
+              <p>SALSA DE TOMATE  CONSTANCIA</p>
+            </div>
+          </div>          
+        </div>
+        <div class="content-card">
+          <div class="product-card">
+            <figure class="img-card">
+              <img src="./assets/img/img-vinagreta.jpg" alt="vinagreta">
+            </figure>
+            <div class="footer-card">
+              <span>$ 10.800</span>
+              <p>SALSA DE TOMATE  CONSTANCIA</p>
+            </div>
+          </div>          
+        </div>
+        <div class="content-card">
+          <div class="product-card">
+            <figure class="img-card">
+              <img src="./assets/img/img-atun.png" alt="atun">
+            </figure>
+            <div class="footer-card">
+              <span>$ 10.800</span>
+              <p>SALSA DE TOMATE  CONSTANCIA</p>
+            </div>
+          </div>          
+        </div>
       </div>
     </section>
 
-    <!-- <section class="products-css container-fluid container-xl">
-      <h2 class="title">PRODUCTOS DESTACADOS</h2>
-  
-      <div class="content-cards">
-        <div class="card-2"></div>
-        <div class="card-2"></div>
-        <div class="card-2"></div>
-        <div class="card-2"></div>
-      </div>
-    </section> -->
-
-    <section class="services container-fluid container-xl">
-      <h2 class="fs-3 fw-bold text-center my-3">NUESTROS SERVICIOS</h2>
-  
-      <div class="d-flex justify-content-between gap-2 mb-5" style="height:200px">
-        <div class="card-service">
-          <div class="w-100 d-flex justify-content-center" style="height: 70%">
-            <img src="./assets/icons/ico-bank.svg" alt="icon bank" style="width: 100px">
-          </div>
-          <p class="d-flex mb-0" style="height: 30%">Transacciones Bancarias</p>
+    <section class="section">
+      <h2 class="title">SERVICIOS</h2>
+      
+      <div class="service contenedor">
+        <div class="service-card">
+          <img src="./assets/img/img-trasnfer.png" alt="icon">
+          <span>TRANSFERENCIAS</span>
         </div>
-        <div class="card-service">
-          <div class="w-100 d-flex justify-content-center" style="height: 70%">
-            <img src="./assets/icons/ico-pay.svg" alt="icon bank" style="width: 60px">
-          </div>
-          <p class="d-flex mb-0" style="height: 30%">Pagos de Servicios Punto Red</p>
+        <div class="service-card">
+          <img src="#" alt="icon">
+          <span>PRODUCTOS</span>
         </div>
-        <div class="card-service">
-          <div class="w-100 d-flex justify-content-center" style="height: 70%">
-            <img src="./assets/icons/ico-store.svg" alt="icon bank" style="width: 80px">
-          </div>
-          <p class="d-flex mb-0" style="height: 30%">Transacciones Bancarias</p>
+        <div class="service-card">
+          <img src="#" alt="icon">
+          <span>DOMICILIOS</span>
         </div>
       </div>
     </section>
@@ -153,7 +159,10 @@
     </footer>
   </main>
 
-  <script src="./mai.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous">
+  </script>
 </body>
 
 </html>

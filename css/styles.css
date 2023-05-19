@@ -6,7 +6,7 @@
   --white: #FFF;
   --black: #000;
   --green: #59A96A;
-  --max-width: 75rem; 
+  --max-width: 75rem;
 }
 
 body {
@@ -14,7 +14,12 @@ body {
 }
 
 /* Custom Class */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
 }
 
@@ -54,7 +59,7 @@ p {
   height: 80px;
   background-color: var(--green);
 }
- 
+
 .header-content {
   width: inherit;
   height: inherit;
@@ -174,7 +179,7 @@ p {
 .history .content-img img {
   width: 100%;
   height: 100%;
-  box-shadow: 3px 3px 5px -2px rgba(0,0,0,0.48);
+  box-shadow: 3px 3px 5px -2px rgba(0, 0, 0, 0.48);
 }
 
 .history .content-history {
@@ -209,4 +214,37 @@ p {
 
 .footer .footer-list li:hover {
   color: #59A96A;
+}
+
+/* FORMULARIO */
+label {
+  display: block;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+legend {
+  font-size: 2rem;
+  color: #6d6161;
+}
+
+input:not([type="submit"]),
+textarea,
+select {
+  padding: 1rem;
+  display: block;
+  width: 97%;
+  background-color: #e1e1e1;
+  margin-bottom: 2rem;
+  border: none;
+  border-radius: 1rem;
+}
+
+textarea {
+  height: 20rem;
+}
+
+.contacto p {
+  font-size: 1.4rem;
+  color: #4f4f4f;
 }

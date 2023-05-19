@@ -32,9 +32,8 @@
 
   <main class="main">
     <h1 class="title">CONTACTANOS</h1>
-    <section class="form contenedor mb-4">
-      <fieldset>
-        <legend>Informacion Personal</legend>
+    <section class="contenedor mb-4">
+      <form class="form">
         <label for="nombre">Nombre:</label>
         <input class="inputestilo" type="text" id="nombre" placeholder="Tu Nombre">
 
@@ -47,7 +46,16 @@
 
         <label for="mensaje">Mensaje:</label>
         <textarea name="mensaje"></textarea>
-      </fieldset>
+
+        <div class="d-flex justify-content-center">
+          <button
+            class="btn bg-success mt-3"
+            style="width: 130px; color: white"
+          >
+            Enviar
+          </button>
+        </div>
+      </form>
     </section>
 
     <footer class="footer">

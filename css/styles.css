@@ -99,7 +99,8 @@ p {
   display: flex;
   flex-direction: column;
   width: 285px;
-  height: 383px;
+  /* height: 383px; */
+  height: 100%;
   background: #FFFFFF;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
@@ -118,11 +119,11 @@ p {
 
 .footer-card {
   width: 100%;
-  height: 88px;
+  /* height: 88px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0 15px;
+  padding: 8px 15px;
 }
 
 .footer-card span {
@@ -264,7 +265,7 @@ textarea {
   margin-bottom: 2rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 600px) {
   .grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -272,6 +273,103 @@ textarea {
 
 @media (min-width: 992px) {
   .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1240px) {
+  .grid {
     grid-template-columns: repeat(4, 1fr);
   }
+}
+
+/* View product detail */
+.product-detail {
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+}
+
+.product-detail img {
+  width: 30%;
+  max-width: 100%;
+  object-fit: contain;
+  box-shadow: -3px 4px 9px -2px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -3px 4px 9px -2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -3px 4px 9px -2px rgba(0, 0, 0, 0.75);
+}
+
+.product-info {
+  width: 70%;
+}
+
+.title-product {
+  font-size: 20px;
+}
+
+.characteristics {
+  width: 100%;
+  padding: 0;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+
+  height: 50px;
+  list-style: none;
+  border-bottom: 1px solid #ccc;
+}
+
+.item:nth-child(2) {
+  height: auto;
+  min-height: 80px;
+}
+
+.item p {
+  margin-bottom: 0;
+}
+
+.item span {
+  font-weight: 600;
+}
+
+.item .input-quantity {
+  display: flex;
+  width: 150px;
+  height: 30px;
+  border-radius: 6px;
+}
+
+.item .input-quantity .btn-action {
+  display: flex;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background-color: #96BB9E;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 6px 0 0 6px;
+}
+
+.item .input-quantity .btn-action:hover {
+  cursor: pointer;
+  background-color: var(--green);
+}
+
+.item .input-quantity .quantity {
+  text-align: center;
+  width: 45px;
+  height: 30px;
+  border-radius: 0;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.item .input-quantity .quantity[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.item .input-quantity .add {
+  border-radius: 0 6px 6px 0;
 }
